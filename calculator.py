@@ -63,16 +63,16 @@ while True:
             answer = add(user_input)
         elif operator == '-':
             answer = subtract(user_input)
-        # elif operator == '*':
-        #     answer = multiply(num1, num2)
-        # elif operator == '/':
-        #     answer = divide(num1, num2)
-        # elif operator == 'square':
-        #     answer = square(num1)
-        # elif operator == 'cube':
-        #     answer = cube(num1)
-        # elif operator == 'power':
-        #     answer = power(num1, num2)
-        # elif operator == '%':
-        #     answer = mod(num1, num2)
+        elif operator == '*':
+            answer = multiply(user_input)
+        elif operator == '/':
+            answer = divide(user_input)
+        elif operator == 'square':
+            answer = square(user_input)
+        elif operator == 'cube':
+            answer = cube(user_input)
+        elif operator == 'power':
+            answer = power(user_input)
+        elif operator == '%':
+            answer = mod(user_input)
     print answer

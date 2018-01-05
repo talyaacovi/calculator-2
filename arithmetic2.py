@@ -24,41 +24,61 @@ def subtract(list_of_numbers):
     return answer
 
 
-# def multiply(num1, num2):
-#     """Multiply the two inputs together."""
+def multiply(list_of_numbers):
+    """Multiply all of the inputs together."""
 
-#     return num1 * num2
+    answer = float(list_of_numbers[0])
 
+    for num in list_of_numbers[1:]:
 
-# def divide(num1, num2):
-#     """Divide the first input by the second and return the result."""
+        answer *= float(num)
 
-#     return float(num1) / num2
-
-
-# def square(num1):
-#     """Return the square of the input."""
-
-#     # Needs only one argument
-
-#     return num1 * num1
+    return answer
 
 
-# def cube(num1):
-#     """Return the cube of the input."""
+def divide(list_of_numbers):
+    """Divide the first input by the remaining inputs and return the result."""
 
-#     # Needs only one argument
+    answer = float(list_of_numbers[0])
 
-#     return num1 * num1 * num1
+    for num in list_of_numbers[1:]:
 
+        answer /= float(num)
 
-# def power(num1, num2):
-#     """Raise num1 to the power of num and return the value."""
-
-#     return num1 ** num2  # ** = exponent operator
+    return answer
 
 
-# def mod(num1, num2):
-#     """Return the remainder of num / num2."""
+def square(list_of_numbers):
+    """Return the square of the first number input."""
 
-#     return num1 % num2
+    # Needs only one argument
+    num1 = float(list_of_numbers[0])
+
+    return num1 * num1
+
+
+def cube(list_of_numbers):
+    """Return the cube of the first input."""
+
+# Needs only one argument
+    num1 = float(list_of_numbers[0])
+
+    return num1 * num1 * num1
+
+
+def power(list_of_numbers):
+    """Raise num1 to the power of num2 and return the value."""
+
+    num1 = float(list_of_numbers[0])
+    num2 = float(list_of_numbers[1])
+
+    return num1 ** num2  # ** = exponent operator
+
+
+def mod(list_of_numbers):
+    """Return the remainder of num / num2."""
+
+    num1 = float(list_of_numbers[0])
+    num2 = float(list_of_numbers[1])
+
+    return num1 % num2
