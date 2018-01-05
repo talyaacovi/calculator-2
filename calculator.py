@@ -33,4 +33,10 @@ while True:
             answer = divide(num1, num2)
         elif operator == 'square':
             answer = square(num1)
+        elif operator == 'cube':
+            answer = cube(num1)
+        elif operator == 'power':
+            answer = power(num1, num2)
+        elif operator == '%':
+            answer = mod(num1, num2)
     print answer
