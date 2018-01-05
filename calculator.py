@@ -25,7 +25,12 @@ while True:
     else:
         if operator == '+':
             answer = add(num1, num2)
-            print answer
         elif operator == '-':
             answer = subtract(num1, num2)
-            print answer
+        elif operator == '*':
+            answer = multiply(num1, num2)
+        elif operator == '/':
+            answer = divide(num1, num2)
+        elif operator == 'square':
+            answer = square(num1)
+    print answer
